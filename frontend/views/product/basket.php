@@ -1,4 +1,4 @@
-<?php ?>
+<?php //var_dump($_SESSION);?>
 <div class="conteiner">
   <table class="table table-hover">
     <thead class="thead-dark">
@@ -24,7 +24,7 @@
 </div>
 <div class="container">
   <form method="POST">
-
+<input type="hidden" name="user" value="<?=$_SESSION['__id']?>">
     <input name="productsbasket" type="hidden" v-bind:value="string_products"/>
     <button class="btn btn-success" type="submit">Buy</button>
   </form>

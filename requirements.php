@@ -1,5 +1,6 @@
 <?php
 $session->open();
+$_SESSION["Hello"] = "Hello";
 /**
  * Application requirement checker script.
  *
